@@ -1,0 +1,7 @@
+{
+  "name": "Ultimate Parking Simulator 3D",
+  "description": "Real 3D car parking simulator with 100 progressive levels, realistic physics, vehicle showroom, customizable upgrades, and authentic driving controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

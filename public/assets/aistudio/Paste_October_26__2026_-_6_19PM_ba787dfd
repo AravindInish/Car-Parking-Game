@@ -1,0 +1,1058 @@
+# GAME DEVELOPMENT PROMPT: ULTIMATE 3D PARKING SIMULATOR
+
+## 1. Project Overview
+
+Build a complete, immersive, realistic **3D Car Parking Simulator Game** featuring 100 progressively challenging levels, realistic vehicle physics, interactive driving controls, a vehicle showroom, a coin-based economy, car upgrades, animations, and high-score tracking.
+
+The game must feel like a polished commercial mobile parking game, with realistic driving mechanics, smooth animations, detailed 3D environments, and an intuitive user interface.
+
+The game must be fully playable, not just a visual prototype. All buttons, menus, controls, level progression, rewards, vehicle purchases, and upgrades must work correctly.
+
+### Game Title
+
+**Ultimate Parking Simulator 3D**
+
+### Core Objectives
+
+* Create a realistic 3D driving and parking experience.
+* Include 100 playable levels with increasing difficulty.
+* Reward players with gold coins after completing levels.
+* Allow players to purchase and upgrade vehicles.
+* Implement realistic car controls and vehicle interactions.
+* Support steering wheel, arrow buttons, and tilt controls.
+* Include automatic and manual transmission modes.
+* Provide immersive sound effects, animations, and visual feedback.
+* Save player progress, unlocked levels, purchased cars, coins, and high scores.
+
+---
+
+## 2. 3D Graphics and Environment
+
+Develop the game in a fully 3D environment with realistic lighting, shadows, reflections, and vehicle physics.
+
+### Environment Design
+
+Include multiple environments that unlock as players progress:
+
+1. Beginner Training Parking Lot
+2. Modern Shopping Mall Parking
+3. Multi-Storey Parking Garage
+4. City Street Parking
+5. Office Complex Parking
+6. Airport Parking Zone
+7. Residential Parking Area
+8. Narrow Underground Parking
+9. Industrial Parking Zone
+10. Advanced Challenge Parking Arena
+
+Each environment should have unique layouts, obstacles, lighting, and parking challenges.
+
+### Environmental Features
+
+* Realistic roads and parking spaces.
+* Parking lines and directional arrows.
+* Traffic cones and barricades.
+* Pillars, walls, fences, and other obstacles.
+* Moving vehicles in selected levels.
+* Ramps and sloped parking areas.
+* Indoor and outdoor lighting.
+* Daytime, nighttime, and rainy environments.
+* Realistic shadows and reflections.
+* Functional parking indicators and visual parking guidance.
+
+Optimize the graphics for smooth performance on mobile devices and desktop computers.
+
+---
+
+## 3. Vehicle System
+
+Include at least four fully modeled, drivable 3D vehicles available through the in-game store.
+
+### Initial Vehicle Collection
+
+**Car 1: Compact Hatchback**
+
+* Free starter vehicle.
+* Easy steering.
+* Small turning radius.
+* Low acceleration.
+* Suitable for beginner levels.
+
+**Car 2: Premium Sedan**
+
+* Requires gold coins to purchase.
+* Balanced acceleration and handling.
+* Medium turning radius.
+* Suitable for intermediate levels.
+
+**Car 3: Sports Car**
+
+* Higher acceleration.
+* Greater top speed.
+* More challenging handling.
+* Requires advanced driving skills.
+
+**Car 4: Luxury SUV**
+
+* Larger dimensions.
+* Different turning characteristics.
+* Higher vehicle mass.
+* Requires precise maneuvering in narrow spaces.
+
+Use original or properly licensed 3D vehicle models. Do not use copyrighted branded vehicle designs without permission.
+
+### Vehicle Customization
+
+Allow players to customize:
+
+* Body color.
+* Wheel design.
+* Wheel color.
+* Paint finish.
+* Headlights.
+* Interior appearance.
+* License plate.
+* Cosmetic accessories.
+
+Show each vehicle in a rotating 3D showroom with lighting, purchase options, specifications, and upgrade controls.
+
+### Vehicle Specifications
+
+Each car must have its own:
+
+* Maximum speed.
+* Acceleration.
+* Braking power.
+* Steering sensitivity.
+* Reverse speed.
+* Turning radius.
+* Vehicle weight.
+* Suspension characteristics.
+* Durability.
+* Upgrade levels.
+
+Vehicle specifications must affect actual gameplay rather than being purely decorative.
+
+---
+
+## 4. Realistic Driving Controls
+
+Create a customizable control system that allows players to select their preferred driving method.
+
+### A. Steering Wheel Control
+
+Display a virtual steering wheel on the screen.
+
+Features:
+
+* Rotate left and right.
+* Smooth steering response.
+* Automatic return toward the center.
+* Adjustable steering sensitivity.
+* Visual rotation synchronized with the front wheels.
+
+### B. Arrow Button Control
+
+Provide four directional controls where appropriate:
+
+* Left arrow.
+* Right arrow.
+* Forward arrow.
+* Reverse arrow.
+
+The left and right buttons control steering. Forward and reverse inputs must interact correctly with the selected transmission mode.
+
+### C. Tilt Control
+
+Use the device's accelerometer to allow steering by tilting the device.
+
+Features:
+
+* Tilt left to steer left.
+* Tilt right to steer right.
+* Adjustable sensitivity.
+* Calibration option.
+* Reset-to-center option.
+* Smooth steering transitions.
+
+If device sensors are unavailable, automatically disable tilt mode and explain why.
+
+### D. Accelerator
+
+Add an interactive accelerator pedal.
+
+Features:
+
+* Gradual acceleration based on how long the player presses the pedal.
+* Smooth engine response.
+* Engine RPM simulation.
+* Acceleration sounds.
+* Speed display.
+
+### E. Brake Pedal
+
+Include a functional brake pedal.
+
+Features:
+
+* Progressive braking.
+* Brake lights that illuminate when braking.
+* Vehicle deceleration.
+* Emergency braking response.
+* Brake performance affected by vehicle upgrades.
+
+### F. Handbrake
+
+Include a dedicated handbrake button.
+
+Features:
+
+* Apply parking brake force.
+* Hold the vehicle stationary when engaged.
+* Release the brake when activated again.
+* Prevent unintended vehicle movement while parked.
+
+### G. Forward and Reverse
+
+Provide a gear direction selector that supports:
+
+* Forward.
+* Neutral.
+* Reverse.
+* Park, if supported by the selected vehicle model.
+
+The vehicle must respond appropriately to the selected direction and brake state.
+
+---
+
+## 5. Engine Start and Seat Belt System
+
+Implement an interactive vehicle startup sequence.
+
+### Power Start Button
+
+Before driving, the player must start the car.
+
+Sequence:
+
+1. The player enters the driving interface.
+2. The dashboard becomes active.
+3. The player presses the power/start button.
+4. The engine starts with an appropriate animation and sound.
+5. The dashboard displays engine status and RPM.
+6. The player selects a gear and begins driving.
+
+Include an ignition or engine-start sound, dashboard lighting, and a brief startup animation.
+
+The engine must not move the vehicle until the appropriate driving inputs are applied.
+
+### Seat Belt Functionality
+
+Add a seat belt button or toggle.
+
+Features:
+
+* Display an unfastened seat belt warning.
+* Animate the seat belt fastening when activated.
+* Update the dashboard indicator.
+* Optionally apply a small gameplay penalty for driving without fastening the seat belt.
+
+Allow the player to fasten the seat belt before starting a level.
+
+---
+
+## 6. Automatic and Manual Transmission
+
+Provide two transmission modes.
+
+### Automatic Transmission
+
+* Automatically select suitable forward gears.
+* Shift gears according to vehicle speed and engine RPM.
+* Display the current gear.
+* Include reverse, neutral, and park where appropriate.
+* Make the mode accessible to beginners.
+
+### Manual Transmission
+
+Provide:
+
+* Gear up button.
+* Gear down button.
+* Gear indicator.
+* Neutral.
+* Reverse.
+* Optional clutch pedal for advanced simulation.
+
+Implement sensible gear ratios and prevent invalid gear selections.
+
+For example, the player should not be able to shift directly into reverse while moving forward at high speed.
+
+Allow players to change transmission preferences in the settings menu.
+
+---
+
+## 7. Mirrors and Camera System
+
+Add functional mirrors and multiple camera perspectives.
+
+### Rearview Mirror
+
+* Display a live view of the area behind the vehicle.
+* Update continuously as the vehicle moves.
+* Show nearby obstacles and vehicles.
+
+### Side Mirrors
+
+* Left mirror displays the area to the left and behind.
+* Right mirror displays the area to the right and behind.
+* Use separate camera views or an equivalent optimized rendering technique.
+
+### Camera Modes
+
+1. Third-person chase camera.
+2. Front-facing camera.
+3. First-person cockpit camera.
+4. Rear camera.
+5. Top-down parking camera.
+
+Add a camera-switch button.
+
+The cockpit camera should display the steering wheel, dashboard, mirrors, and relevant vehicle controls.
+
+Provide adjustable camera sensitivity and optional camera rotation.
+
+---
+
+## 8. Indicators and Hazard Lights
+
+Implement fully functional vehicle lighting controls.
+
+### Left Indicator
+
+* Activate the left turn signal.
+* Display a blinking left dashboard indicator.
+* Play a subtle indicator sound.
+* Show the blinking signal on the exterior vehicle lights.
+
+### Right Indicator
+
+* Activate the right turn signal.
+* Display a blinking right dashboard indicator.
+* Play a subtle indicator sound.
+* Show the blinking signal on the exterior vehicle lights.
+
+### Hazard Lights
+
+* Activate both indicators simultaneously.
+* Blink both sides at the same time.
+* Update the dashboard hazard symbol.
+* Toggle hazard lights on and off.
+
+### Additional Lighting
+
+Include:
+
+* Headlights.
+* High-beam headlights.
+* Brake lights.
+* Reverse lights.
+* Optional parking lights.
+
+Ensure that all light animations remain synchronized with their dashboard indicators.
+
+---
+
+## 9. The 100-Level Campaign
+
+Create exactly 100 playable parking levels.
+
+Every level must have a defined objective, difficulty rating, parking layout, obstacle configuration, and completion condition.
+
+### Difficulty Progression
+
+**Levels 1–10: Beginner**
+
+* Large parking spaces.
+* Wide roads.
+* Minimal obstacles.
+* Basic forward and reverse parking.
+* Introduction to vehicle controls.
+
+**Levels 11–20: Basic Parking Skills**
+
+* Smaller parking spaces.
+* Parallel parking.
+* Reverse parking.
+* Simple turns.
+* Parking between stationary vehicles.
+
+**Levels 21–30: Intermediate Challenges**
+
+* Narrow driving lanes.
+* Multiple turns.
+* Pillars and cones.
+* Limited maneuvering space.
+* Increased precision requirements.
+
+**Levels 31–40: Advanced Maneuvering**
+
+* Tight corners.
+* Multi-point turns.
+* Parallel parking between vehicles.
+* Parking on ramps.
+* More complex reverse maneuvers.
+
+**Levels 41–50: Multi-Storey Parking**
+
+* Parking garage layouts.
+* Ramps between floors.
+* Narrow turning areas.
+* Pillars and restricted spaces.
+* Different elevation levels.
+
+**Levels 51–60: City Parking**
+
+* Street-side parking.
+* Moving traffic in designated areas.
+* Restricted parking zones.
+* Time-limited challenges.
+* Precise vehicle positioning.
+
+**Levels 61–70: Expert Parking**
+
+* Extremely narrow spaces.
+* Complex obstacle arrangements.
+* Multiple reverse maneuvers.
+* Limited correction opportunities.
+* More demanding accuracy requirements.
+
+**Levels 71–80: Professional Challenges**
+
+* Advanced parallel parking.
+* Tight underground garages.
+* Challenging ramps.
+* Complex obstacle courses.
+* Multiple parking objectives within one level.
+
+**Levels 81–90: Master Driver Challenges**
+
+* Difficult combinations of parking techniques.
+* Restricted maneuvering areas.
+* Moving obstacles where appropriate.
+* Increased precision requirements.
+* Limited damage allowances.
+
+**Levels 91–100: Ultimate Parking Challenges**
+
+* Extremely demanding parking layouts.
+* Complex multi-stage maneuvers.
+* Narrow spaces with minimal clearance.
+* Advanced combinations of reverse and forward parking.
+* Optional time limits and strict damage limits.
+* A final championship challenge at Level 100.
+
+### Level Design Requirements
+
+Do not simply change the number displayed on the screen.
+
+Each level must have a distinct or meaningfully modified parking layout, with increasing complexity, obstacle density, precision requirements, or other challenge parameters.
+
+Create a reusable level-generation system with individually configured layouts for all 100 levels.
+
+If procedural generation is used, validate every generated layout to ensure the parking objective is physically reachable.
+
+### Level Unlocking
+
+* Level 1 is available immediately.
+* Completing a level unlocks the next level.
+* Incomplete levels remain locked when progression requirements are not met.
+* Previously completed levels can be replayed.
+* Each level displays its completion status, best score, and best completion time.
+* Players retain their progress when they leave the game.
+
+---
+
+## 10. Realistic Parking and Collision Detection
+
+Implement an accurate parking validation system.
+
+A level is completed only when:
+
+1. The vehicle enters the designated parking area.
+2. The vehicle is correctly aligned.
+3. The vehicle is within the required parking boundaries.
+4. The vehicle's speed falls below the parking threshold.
+5. The vehicle remains stationary for a short confirmation period.
+
+Evaluate parking position, angle, speed, and boundary alignment.
+
+Display visual parking guidance when the vehicle approaches the target area.
+
+### Collision System
+
+Detect collisions with:
+
+* Walls.
+* Pillars.
+* Traffic cones.
+* Other vehicles.
+* Barriers.
+* Road boundaries.
+* Other level-specific obstacles.
+
+Collision severity should depend on the impact speed and collision conditions.
+
+Implement:
+
+* Minor collision feedback.
+* Major collision feedback.
+* Vehicle damage indicators.
+* Collision sounds.
+* Camera shake for significant impacts.
+* Damage penalties.
+* Optional level failure for severe collisions.
+
+Avoid excessive camera shake or effects that make the game uncomfortable.
+
+### Damage System
+
+Show vehicle condition through a damage meter.
+
+Damage should affect the player's score and potentially vehicle performance at higher damage levels.
+
+Provide visual feedback, such as scratches or deformation effects where supported by the vehicle models.
+
+Do not make the vehicle visually damaged solely through a number displayed on the screen.
+
+---
+
+## 11. Gold Coin Reward System
+
+Implement a persistent in-game currency system.
+
+### Reward Rules
+
+Players receive gold coins after successfully completing a level.
+
+Rewards should depend on:
+
+* Level difficulty.
+* Parking accuracy.
+* Completion time.
+* Collision count.
+* Remaining vehicle condition.
+* Successful completion of optional objectives.
+
+Example reward structure:
+
+| Performance                |              Reward |
+| -------------------------- | ------------------: |
+| Basic completion           |           100 coins |
+| Good parking accuracy      |           150 coins |
+| Excellent parking accuracy |           200 coins |
+| Perfect parking            |           250 coins |
+| Optional challenge bonus   | 50 additional coins |
+
+These values are initial balancing suggestions and should be configurable.
+
+Prevent duplicate rewards from being granted repeatedly for the same completion record. Players may earn coins again when replaying a level, but replay rewards must follow the defined reward rules.
+
+### Currency Interface
+
+Display:
+
+* Current coin balance.
+* Coins earned after each level.
+* Coins required for vehicle purchases.
+* Coins required for upgrades.
+* Transaction feedback.
+
+Save the coin balance so that it persists after the game is closed.
+
+---
+
+## 12. Vehicle Store and Purchasing System
+
+Create a dedicated in-game vehicle store.
+
+### Store Interface
+
+Display each vehicle with:
+
+* 3D preview.
+* Vehicle name.
+* Purchase price.
+* Specifications.
+* Upgrade options.
+* Ownership status.
+* Select or purchase button.
+
+### Purchase Logic
+
+* The starter vehicle is free.
+* Other vehicles require gold coins.
+* Players cannot purchase a vehicle if they do not have enough coins.
+* Deduct coins only after a successful purchase.
+* Purchased vehicles remain permanently unlocked.
+* Players can switch between vehicles they own.
+* Display a clear confirmation animation after a successful purchase.
+
+Suggested initial prices:
+
+| Vehicle           |       Price |
+| ----------------- | ----------: |
+| Compact Hatchback |        Free |
+| Premium Sedan     | 2,000 coins |
+| Sports Car        | 5,000 coins |
+| Luxury SUV        | 8,000 coins |
+
+Adjust the economy to match the difficulty and expected reward progression.
+
+---
+
+## 13. Vehicle Upgrade System
+
+Allow players to improve their vehicles using gold coins.
+
+### Upgrade Categories
+
+**1. Engine Upgrade**
+
+* Improve acceleration.
+* Improve engine responsiveness.
+* Increase maximum speed within reasonable limits.
+
+**2. Brake Upgrade**
+
+* Improve braking performance.
+* Reduce stopping distance.
+
+**3. Steering Upgrade**
+
+* Improve steering responsiveness.
+* Allow more precise low-speed maneuvering.
+
+**4. Suspension Upgrade**
+
+* Improve stability.
+* Improve handling on ramps and uneven surfaces.
+
+**5. Tire Upgrade**
+
+* Improve traction.
+* Improve vehicle control.
+
+**6. Transmission Upgrade**
+
+* Improve gear-shifting response.
+* Improve acceleration characteristics.
+
+**7. Durability Upgrade**
+
+* Reduce the gameplay impact of collisions.
+* Improve vehicle damage resistance where supported.
+
+### Upgrade Levels
+
+Give each upgrade multiple levels, such as Level 1 through Level 5.
+
+Every upgrade must have:
+
+* A purchase price.
+* A current upgrade level.
+* A preview of its effect.
+* A maximum upgrade level.
+* An actual impact on gameplay physics.
+
+Display a confirmation screen before spending coins.
+
+---
+
+## 14. Winning Animations and Game Feedback
+
+Create satisfying animations and sound effects for all major gameplay events.
+
+### Level Victory Animation
+
+When the player successfully parks:
+
+1. Gradually stop the vehicle.
+2. Confirm that the parking conditions are satisfied.
+3. Play a victory sound.
+4. Display a success animation.
+5. Show a celebratory banner.
+6. Display the number of stars earned.
+7. Animate gold coins appearing and accumulating.
+8. Show the final score, time, and damage statistics.
+9. Unlock the next level.
+10. Display Replay and Next Level buttons.
+
+Use polished animations, smooth transitions, particle effects, and tasteful lighting effects.
+
+### Collision Animation
+
+When the player hits an obstacle:
+
+* Trigger an appropriate impact sound.
+* Show a brief visual effect.
+* Update the damage meter.
+* Display the penalty when appropriate.
+* Provide clear feedback without obstructing gameplay.
+
+### Additional Animations
+
+Include:
+
+* Car engine startup.
+* Steering wheel rotation.
+* Gear shifting.
+* Brake lights illuminating.
+* Indicators blinking.
+* Headlights switching on.
+* Seat belt fastening.
+* Vehicle purchasing.
+* Vehicle upgrade confirmation.
+* Level unlocking.
+* Coin collection.
+* Game-over transitions.
+
+Use animations that communicate actual game events rather than decorative effects alone.
+
+---
+
+## 15. Scoring and High-Score Tracking
+
+Implement a comprehensive scoring system.
+
+### Score Factors
+
+* Parking accuracy.
+* Completion time.
+* Number of collisions.
+* Vehicle damage.
+* Number of unnecessary maneuvers, where appropriate.
+* Optional objectives completed.
+* Correct use of designated parking techniques.
+
+### Three-Star Rating
+
+Award up to three stars per level.
+
+Example:
+
+* Three stars: Excellent parking with minimal damage and high accuracy.
+* Two stars: Successful parking with a few mistakes.
+* One star: Successful parking with significant penalties.
+
+Define configurable thresholds for each level.
+
+### High-Score Dashboard
+
+Track:
+
+* Highest score per level.
+* Best completion time.
+* Best parking accuracy.
+* Lowest damage.
+* Total levels completed.
+* Total stars collected.
+* Total coins earned.
+* Number of vehicles owned.
+* Overall campaign completion percentage.
+
+Allow players to replay completed levels to beat their previous records.
+
+Save the best valid result for each level and update the records when the player achieves a better performance.
+
+---
+
+## 16. User Interface and Game Menus
+
+Create a polished interface with a consistent visual design.
+
+### Main Menu
+
+Include:
+
+* Play.
+* Continue.
+* Level Selection.
+* Garage.
+* Vehicle Store.
+* Upgrades.
+* High Scores.
+* Settings.
+* Exit or return options appropriate to the platform.
+
+### In-Game HUD
+
+Display:
+
+* Speedometer.
+* Current gear.
+* Engine RPM.
+* Fuel or energy indicator if implemented.
+* Vehicle damage meter.
+* Coin balance.
+* Level number.
+* Timer.
+* Parking target indicator.
+* Mini-map or parking guidance.
+* Camera switch button.
+* Indicator controls.
+* Hazard lights.
+* Headlight controls.
+* Seat belt status.
+
+Ensure the driving interface remains uncluttered and that controls do not obscure the parking target.
+
+### Pause Menu
+
+Include:
+
+* Resume.
+* Restart Level.
+* Control Settings.
+* Camera Settings.
+* Sound Settings.
+* Main Menu.
+
+Warn the player before restarting a level if doing so will discard an unfinished attempt.
+
+### Settings Menu
+
+Allow customization of:
+
+* Graphics quality.
+* Sound volume.
+* Music volume.
+* Steering sensitivity.
+* Tilt sensitivity.
+* Transmission mode.
+* Control layout.
+* Camera sensitivity.
+* Language, if supported.
+
+---
+
+## 17. Sound Design
+
+Include immersive audio.
+
+### Vehicle Sounds
+
+* Engine start.
+* Engine idle.
+* Engine acceleration.
+* Gear shifting.
+* Reverse warning sound where appropriate.
+* Braking.
+* Tire friction.
+* Collision impacts.
+* Indicator clicking.
+* Seat belt warning.
+* Parking confirmation.
+
+### Interface Sounds
+
+* Button clicks.
+* Menu transitions.
+* Vehicle purchase confirmation.
+* Upgrade confirmation.
+* Coin collection.
+* Level unlock.
+* Victory celebration.
+* Failure notification.
+
+Use properly licensed audio assets or original sound effects.
+
+Provide volume controls and the option to mute individual audio categories.
+
+---
+
+## 18. Game Progress Saving
+
+Implement reliable persistent storage.
+
+Save:
+
+* Current level.
+* Unlocked levels.
+* Completed levels.
+* Best scores.
+* Best completion times.
+* Stars earned.
+* Gold coin balance.
+* Purchased vehicles.
+* Selected vehicle.
+* Vehicle customizations.
+* Vehicle upgrades.
+* Control preferences.
+* Transmission settings.
+* Audio settings.
+
+Use the storage system appropriate for the selected game engine and target platform.
+
+For a browser-based game, use local storage or IndexedDB as appropriate. For a native game, use suitable persistent local storage.
+
+Handle missing or corrupted save data safely, and do not reset player progress when the game is refreshed or restarted.
+
+If cloud saves or online leaderboards are implemented, use a proper backend and validate score submissions server-side.
+
+---
+
+## 19. Technology and Architecture
+
+Choose a genuine 3D game engine that supports physics, vehicle controls, animation, lighting, and cross-platform deployment.
+
+### Preferred Technology
+
+Use **Unity with C#** for a full-scale game, with:
+
+* A 3D vehicle physics system.
+* Wheel colliders or an equivalent realistic wheel simulation.
+* Rigidbody-based vehicle movement.
+* Collision detection.
+* Camera systems.
+* Animation controllers.
+* Audio management.
+* UI management.
+* Level management.
+* Persistent save management.
+* Vehicle economy and upgrade systems.
+
+Alternatively, use Unreal Engine or another suitable 3D engine if it provides equivalent functionality.
+
+For a browser-only implementation, use a WebGL-compatible 3D engine such as Three.js, combined with a suitable physics library. Make sure all gameplay systems remain functional in the browser.
+
+**Important:** Do not build a fake 3D game using only static images, 2D sprites, or a non-interactive dashboard. The cars and environments must exist in a real 3D scene with working movement, collision detection, and camera controls.
+
+---
+
+## 20. Development Structure
+
+Organize the game into maintainable components.
+
+Suggested modules:
+
+* GameManager
+* LevelManager
+* VehicleController
+* VehiclePhysics
+* TransmissionController
+* SteeringController
+* InputManager
+* CameraController
+* MirrorController
+* VehicleLightingController
+* SeatBeltController
+* CollisionManager
+* DamageSystem
+* ParkingDetectionSystem
+* ScoringSystem
+* CoinManager
+* VehicleStoreManager
+* VehicleUpgradeManager
+* AudioManager
+* AnimationManager
+* SaveSystem
+* UIManager
+* SettingsManager
+
+Keep vehicle configuration, level definitions, economy values, and scoring thresholds configurable.
+
+Avoid placing all game logic inside a single large script.
+
+---
+
+## 21. Performance and Optimization
+
+Optimize the game for stable performance.
+
+Requirements:
+
+* Smooth driving and steering.
+* Efficient collision detection.
+* Appropriate level-of-detail settings.
+* Optimized lighting and shadows.
+* Reusable environment assets.
+* Efficient mirror rendering.
+* Object pooling for frequently reused effects.
+* Responsive UI.
+* Loading screens for substantial scene transitions.
+* Quality presets for different hardware.
+
+Aim for 60 FPS on capable target devices, with scalable settings for lower-end hardware.
+
+Do not load all 100 levels into memory simultaneously. Load the active level and necessary shared resources.
+
+---
+
+## 22. Quality Assurance and Testing
+
+Test all gameplay systems before considering the game complete.
+
+### Required Tests
+
+1. The starter car can be started and driven.
+2. Steering wheel controls work.
+3. Arrow controls work.
+4. Tilt controls work on compatible devices.
+5. Accelerator and brake function correctly.
+6. Handbrake holds the vehicle stationary.
+7. Automatic transmission changes gears.
+8. Manual transmission responds to gear inputs.
+9. Mirrors display the correct surrounding areas.
+10. Indicators and hazard lights work correctly.
+11. The seat belt system updates its status.
+12. Collisions trigger appropriate feedback.
+13. Parking validation rejects incorrect parking positions.
+14. Successful completion triggers the victory animation.
+15. Gold coins are awarded correctly.
+16. Vehicle purchases deduct the correct amount.
+17. Upgrades affect actual vehicle performance.
+18. Level completion unlocks the next level.
+19. High scores update correctly.
+20. Player progress survives restarting the game.
+21. All 100 levels are accessible through valid progression.
+22. No level contains an impossible or unreachable parking objective.
+
+Fix bugs, missing controls, non-functional buttons, broken save states, and progression errors before delivery.
+
+---
+
+## 23. Final Deliverables
+
+Produce a playable game containing:
+
+* A real 3D driving environment.
+* Four or more fully functional vehicles.
+* Exactly 100 progressively challenging levels.
+* Steering wheel, arrow, and tilt controls.
+* Accelerator, brake, and handbrake.
+* Automatic and manual transmission.
+* Engine start and seat belt systems.
+* Functional mirrors and camera switching.
+* Indicators, hazard lights, headlights, and brake lights.
+* Collision detection and vehicle damage.
+* Gold coin rewards.
+* Vehicle store and purchase system.
+* Vehicle customization and upgrades.
+* Victory and collision animations.
+* Scoring and high-score tracking.
+* Persistent save functionality.
+* Main menu, pause menu, settings, and garage.
+* Sound effects and optimized 3D graphics.
+
+Deliver the complete project with organized source files, setup instructions, and clear guidance for building and running the game.
+
+### Final Instruction to the AI Developer
+
+Build the game in functional stages, starting with the 3D driving environment and core vehicle physics. Then implement the parking validation system, level progression, rewards, vehicle store, upgrades, UI, animations, and persistence.
+
+Prioritize **playability, realistic controls, correct game logic, and stable performance** over decorative features.
+
+Do not merely describe the game or generate a static mockup. Implement the actual playable systems. If a feature cannot be fully implemented in the selected environment, explain the limitation and provide the closest genuinely functional alternative.
+
+The final result should feel like a complete, polished 3D parking simulator rather than a simple driving demo.
